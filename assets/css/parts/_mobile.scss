@@ -1,0 +1,116 @@
+$color1: #160d18;
+$color2: #9202ff;
+$color3: #b664f5;
+$color4: #efefef;
+
+@media (max-width: 959px) {
+    body,
+    a {
+        margin: 0;
+        color: $color1;
+        font-family: "Codicate";
+        line-height: 1.6;
+        text-decoration: none;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    section {
+        padding: 30px 50px;
+    }
+
+    #header {
+        .menu-btn {
+            display: block;
+        }
+        #subnav nav {
+            height: 50px;
+            a {
+                font-size: 14px;
+            }
+        }
+        #topnav {
+            nav {
+                display: none;
+                position: absolute;
+                top: 110px;
+                background: #160d18;
+                padding: 20px;
+                width: 100%;
+                margin: 0;
+                left: 0;
+                box-shadow: 0 0 10px gray;
+                li {
+                    float: none;
+                    padding: 10px;
+                    a {
+                        color: $color4;
+                    }
+                }
+            }
+        }
+    }
+    section#intro {
+        .features {
+            flex-direction: column;
+            padding: 20px;
+        }
+    }
+    section#one {
+        padding: 0;
+        header {
+            padding: 20px;
+        }
+        .wrap {
+            padding-right: 40px;
+        }
+        .table {
+            font-size: 16px;
+            align-items: flex-start;
+            justify-content: flex-start;
+            overflow-x: scroll;
+            width: 100%;
+            padding: 25px 20px 45px 20px;
+            .column li {
+                height: 40px;
+            }
+            .column-1 {
+                li {
+                    padding-left: 15px;
+                }
+                h3:first-child::before {
+                    content: "→";
+                }
+            }
+        }
+    }
+    section#two {
+        padding: 50px;
+        .content div {
+            flex-direction: column;
+            padding: 20px 0 0;
+        }
+        .btn {
+            margin-top: 30px;
+        }
+    }
+    section#three {
+        .content {
+            flex-direction: column;
+        }
+        img {
+            margin: 10px 0;
+            max-width: 70vw;
+        }
+    }
+
+    #footer {
+        padding-bottom: 100px;
+        padding-left: 15px;
+        .wrap .container {
+            padding: 10px;
+        }
+    }
+}
